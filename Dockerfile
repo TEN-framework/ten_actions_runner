@@ -1,4 +1,5 @@
-FROM ghcr.io/actions/actions-runner:2.328.0
+# https://github.com/actions/runner/releases
+FROM ghcr.io/actions/actions-runner:2.330.0
 
 ARG DEBIAN_FRONTEND=noninteractive
 RUN sudo apt-get clean && sudo apt-get update && sudo apt-get install -y --no-install-recommends \
