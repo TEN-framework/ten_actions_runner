@@ -8,13 +8,19 @@
 docker run -d --restart=always \
   --privileged --security-opt seccomp=unconfined --security-opt apparmor=unconfined \
   --entrypoint sleep \
+  --name <runner_name> --hostname <runner_name> \
   ghcr.io/ten-framework/ten_actions_runner:0.1.0 infinity
 ```
 
 - init
 ```bash
+# login
 docker exec -it <CONTAINER_ID> bash
+
+# start docker
 sudo service docker start
+
+# verify docker
 docker run --rm hello-world
 ```
 
