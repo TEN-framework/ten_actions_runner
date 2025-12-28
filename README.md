@@ -7,9 +7,8 @@
 ```bash
 docker run -d --restart=always \
   --privileged --security-opt seccomp=unconfined --security-opt apparmor=unconfined \
-  --entrypoint sleep \
   --name <runner_name> --hostname <runner_name> \
-  ghcr.io/ten-framework/ten_actions_runner:0.1.0 infinity
+  ghcr.io/ten-framework/ten_actions_runner:0.1.1
 ```
 
 - init
