@@ -10,3 +10,4 @@ RUN sudo apt-get clean && sudo apt-get update && sudo apt-get install -y --no-in
 RUN sudo curl -sSL https://get.docker.com/ | sh
 VOLUME /var/lib/docker
 
+ENTRYPOINT ["sleep", "infinity"]
